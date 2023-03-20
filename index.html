@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Andrew</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style type="text/css">
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			font-family: Arial, sans-serif;
-			color: #333;
-			margin-top: 50px;
-		}
-
-		.avatar {
-			display: block;
-			width: 150px;
-			height: 150px;
-			border-radius: 50%;
-			object-fit: cover;
-			object-position: center;
-			margin-bottom: 20px;
-		}
-
-		.intro {
-			font-size: 18px;
-			line-height: 1.5;
-			text-align: center;
-			margin-bottom: 40px;
-		}
-
-		.qrcode {
-			display: block;
-			width: 150px;
-			height: 150px;
-			margin-bottom: 20px;
-		}
-
-		.link {
-			font-size: 16px;
-			text-align: center;
-		}
-
-		.link a {
-			color: #333;
-			text-decoration: none;
-		}
-
-		.link a:hover {
-			text-decoration: underline;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<img src="/andrew.jpeg" alt="avatar" class="avatar">
-		<div class="intro">
-			A tech enthusiast who is passionate about exploring cutting-edge technology trends and developments. This website is hosted on GitHub and the code is written by ChatGPT.
-		</div>
-		<img src="/qr.jpg" alt="qrcode" class="qrcode">
-		<div class="link">
-			Welcome to <a href="https://nqzn.net" target="_blank">nqzn.net</a>, and feel free to follow my WeChat Official Account by scanning the QR code above.
-		</div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Andrew</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background-color: #f7f7f7;
+      }
+      h1 {
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      #qrcode {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .intro {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/andrew.jpeg" alt="avatar" id="avatar">
+      <h1>Andrew</h1>
+      <div class="intro">
+        <p>A tech enthusiast who is passionate about exploring cutting-edge technology trends and developments.</p>
+        <p>This website is hosted on GitHub and the code is written by ChatGPT.</p>
+      </div>
+      <img src="/qr.jpg" alt="qrcode" id="qrcode">
+      <p>Welcome to nqzn.net, and feel free to follow my WeChat Official Account by scanning the QR code above.</p>
+    </div>
+  </body>
 </html>
