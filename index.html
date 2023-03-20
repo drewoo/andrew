@@ -1,60 +1,68 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Andrew</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: #F7F7F7;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 50px;
-        }
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-        .avatar img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .qrcode {
-            width: 150px;
-            height: 150px;
-            margin-top: 20px;
-        }
-        .qrcode img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-    </style>
+	<title>Andrew</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin-top: 50px;
+		}
+
+		.avatar {
+			display: block;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: center;
+			margin-bottom: 20px;
+		}
+
+		.intro {
+			font-size: 18px;
+			line-height: 1.5;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		.qrcode {
+			display: block;
+			width: 150px;
+			height: 150px;
+			margin-bottom: 20px;
+		}
+
+		.link {
+			font-size: 16px;
+			text-align: center;
+		}
+
+		.link a {
+			color: #333;
+			text-decoration: none;
+		}
+
+		.link a:hover {
+			text-decoration: underline;
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-        <div class="avatar">
-            <img src="/andrew.jpeg" alt="ChatGPT">
-        </div>
-        <h1>Andrew</h1>
-    <div class="intro-container">
-  <p class="intro-text">
-    A tech enthusiast who is passionate about exploring cutting-edge technology trends and developments. This website is hosted on GitHub and the code is written by ChatGPT.
-  </p>
-  <p class="intro-text">
-    Welcome to <a href="http://nqzn.net/">nqzn.net</a >, and feel free to follow my WeChat Official Account by scanning the QR code below.
-  </p>
-  <div class="qr-code">
-    <img src="/qr.jpg" alt="WeChat QR Code">
-  </div>
-</div>
+	<div class="container">
+		<img src="/andrew.jpg" alt="avatar" class="avatar">
+		<div class="intro">
+			A tech enthusiast who is passionate about exploring cutting-edge technology trends and developments. This website is hosted on GitHub and the code is written by ChatGPT.
+		</div>
+		<img src="/qr.jpeg" alt="qrcode" class="qrcode">
+		<div class="link">
+			Welcome to <a href="https://nqzn.net" target="_blank">nqzn.net</a>, and feel free to follow my WeChat Official Account by scanning the QR code above.
+		</div>
+	</div>
 </body>
 </html>
