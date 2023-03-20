@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Andrew</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        background-color: #f7f7f7;
-      }
-      h1 {
-        font-size: 40px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      #avatar {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      #qrcode {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-      .intro {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <img src="/andrew.jpeg" alt="avatar" id="avatar">
+<head>
+  <meta charset="UTF-8">
+  <title>Andrew</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    }
+
+    #content {
+      text-align: center;
+      padding: 50px;
+    }
+
+    #avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    #qrcode {
+      margin-top: 20px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="content">
+      <img id="avatar" src="/andrew.jpeg" alt="avatar">
       <h1>Andrew</h1>
-      <div class="intro">
-        <p>A tech enthusiast who is passionate about exploring cutting-edge technology trends and developments.</p>
-        <p>This website is hosted on GitHub and the code is written by ChatGPT.</p>
-      </div>
-      <img src="/qr.jpg" alt="qrcode" id="qrcode">
-      <p>Welcome to nqzn.net, and feel free to follow my WeChat Official Account by scanning the QR code above.</p>
+      <p>A tech enthusiast who is passionate about exploring cutting-edge technology trends and developments. This website is hosted on GitHub and the code is written by ChatGPT.</p>
+      <img id="qrcode" src="/qr.jpg" alt="qrcode">
+      <p>Welcome to <a href="http://nqzn.net">nqzn.net</a>, and feel free to follow my WeChat Official Account by scanning the QR code above.</p>
     </div>
-  </body>
+  </div>
+</body>
 </html>
